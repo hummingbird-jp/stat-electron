@@ -1,0 +1,29 @@
+{
+	"name": "stat-electron",
+	"version": "0.1.0",
+	"description": "Stat! for macOS, made by Yusuke Hakamaya",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"build": "electron-builder --dir",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Yusuke Hakamaya",
+	"license": "ISC",
+	"devDependencies": {
+		"electron": "^12.0.2",
+		"electron-builder": "^22.10.5"
+	},
+	"build": {
+		"mac": {
+			"target": {
+				"target": "dir",
+				"arch": "universal"
+			}
+		}
+	},
+	"dependencies": {
+		"electron-packager": "^15.2.0"
+	}
+}
